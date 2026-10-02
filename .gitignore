@@ -1,3 +1,1 @@
-node_modules
-
-/src/serverF/.env.*.local
+.DS_Store

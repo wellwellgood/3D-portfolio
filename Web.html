@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#101411" />
+    <meta
+      name="description"
+      content="프론트엔드 개발자 김기윤의 3D 포트폴리오. 프로젝트와 웹 인터랙션을 소개합니다."
+    />
+    <title>김기윤 — Frontend Developer</title>
+    <link rel="stylesheet" href="Web.css" />
+    <script
+      defer
+      src="vendor/three.r128.min.js"
+    ></script>
+    <script defer src="Web.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">본문 바로가기</a>
+    <div id="scroll-space" aria-hidden="true"></div>
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="김기윤 포트폴리오 처음으로"
+        ><span class="brand-mark">K</span><span>KIYUN KIM</span></a
+      >
+      <nav aria-label="페이지 메뉴">
+        <a href="#about">ABOUT</a>
+        <a href="#project-0" data-project="0">WORKS <span>03</span></a>
+      </nav>
+      <a class="top-contact" href="mailto:159pko@naver.com"
+        >LET’S TALK <span aria-hidden="true">↗</span></a
+      >
+    </header>
+
+    <main id="content">
+      <section class="hero hud" id="top" aria-labelledby="hero-title">
+        <p class="kicker">
+          <span class="live-dot"></span> FRONTEND DEVELOPER
+          <span class="kicker-location">· INCHEON, KR</span>
+        </p>
+        <h1 id="hero-title">Digital ideas,<br /><span>made tangible.</span></h1>
+        <p class="hero-copy">
+          사용자 경험을 고민하고, 가치를 만드는<br />프론트엔드 개발자
+          <strong>김기윤</strong>입니다.
+        </p>
+        <a href="#project-0" data-project="0" class="scroll-cue"
+          ><span class="scroll-icon">↓</span> SCROLL TO EXPLORE</a
+        >
+      </section>
+
+      <aside class="scene-label" aria-hidden="true">
+        <span>01 — 03</span><i></i><span>SELECTED WORK</span>
+      </aside>
+      <div class="progress" aria-hidden="true"><i></i></div>
+
+      <section
+        class="project-panel hud"
+        id="project-panel"
+        aria-live="polite"
+        aria-atomic="true"
+        aria-label="선택 프로젝트"
+      >
+        <div class="project-meta">
+          <span class="project-number">01</span
+          ><span class="project-type">WEB APPLICATION</span
+          ><span class="project-year">PERSONAL PROJECT</span>
+        </div>
+        <h2 id="project-title">Dashboard Project</h2>
+        <p id="project-description">
+          차트, 메일, 파일 관리 기능을 포함한 웹 대시보드 프로젝트입니다.
+        </p>
+        <div id="project-tags" class="tags">
+          <span>React</span><span>Node.js</span><span>Socket.IO</span>
+        </div>
+        <a
+          id="project-link"
+          class="project-link"
+          href="https://dashboardkky.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          >사이트 둘러보기 <span aria-hidden="true">↗</span></a
+        >
+      </section>
+
+      <section class="about-panel hud" id="about" aria-labelledby="about-title">
+        <p class="kicker">A LITTLE ABOUT ME</p>
+        <h2 id="about-title">
+          좋은 경험은<br /><span>세심한 디테일에서.</span>
+        </h2>
+        <p>
+          React 기반 웹 애플리케이션과 반응형 화면을 만들고 있습니다. 사용자의
+          흐름을 살피고, 명확하고 편안한 인터페이스로 연결하는 일을 좋아합니다.
+        </p>
+        <dl>
+          <div>
+            <dt>BASED IN</dt>
+            <dd>Incheon, South Korea</dd>
+          </div>
+          <div>
+            <dt>FOCUS</dt>
+            <dd>Frontend · Interaction</dd>
+          </div>
+          <div>
+            <dt>EDUCATION</dt>
+            <dd>한국폴리텍 인천캠퍼스 · 정보통신과</dd>
+          </div>
+        </dl>
+        <a class="about-email" href="mailto:159pko@naver.com"
+          >159pko@naver.com <span aria-hidden="true">↗</span></a
+        >
+      </section>
+
+      <section
+        class="ending hud"
+        id="ending"
+        aria-labelledby="ending-title"
+        aria-hidden="true"
+      >
+        <p class="kicker">
+          <span class="live-dot"></span> HAVE A PROJECT IN MIND?
+        </p>
+        <h2 id="ending-title">같이 만들어볼까요?</h2>
+        <p>프로젝트와 협업 이야기를 기다립니다.</p>
+        <a class="end-cta" href="mailto:159pko@naver.com"
+          >메일 보내기 <span aria-hidden="true">↗</span></a
+        >
+        <a
+          class="github-link"
+          href="https://github.com/wellwellgood"
+          target="_blank"
+          rel="noreferrer"
+          >GITHUB PROFILE ↗</a
+        >
+      </section>
+    </main>
+    <p class="notice" id="notice" role="status" hidden></p>
+    <noscript
+      ><p class="noscript">
+        3D 포트폴리오를 보려면 JavaScript를 활성화해 주세요.
+      </p></noscript
+    >
+  </body>
+</html>

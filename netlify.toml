@@ -1,11 +1,5 @@
 [build]
-command = "CI= npm run build"
-publish = "build"
+  publish = "."
 
 [build.environment]
-NODE_VERSION = "20.18.0"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  NODE_VERSION = "20.18.0"
